@@ -14,10 +14,10 @@ class C(StyleCheck):
     magic_names = [] # Only recognize C files by their extension
 
     astyle = [
-        "astyle", "--ascii", "--add-braces", "--break-one-line-headers",
+        "astyle", "--ascii", "--style=kr", "--remove-braces", "--break-one-line-headers",
         "--align-pointer=name", "--pad-comma", "--unpad-paren",
         "--pad-header", "--pad-oper", "--max-code-length=132",
-        "--convert-tabs", "--indent=spaces=4",
+        "--convert-tabs", "--indent=tab", 
         "--indent-continuation=1", "--indent-switches",
         "--lineend=linux", "--min-conditional-indent=1",
         "--options=none", "--style=allman"
